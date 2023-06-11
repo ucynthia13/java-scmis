@@ -55,6 +55,7 @@
                             <td>Course Name</td>
                             <td>Course Marks</td>
                             <td>Student Id</td>
+                            <td colspan="2" rowspan="1">Operation </td>
                         </tr>
                         </thead>
                         <tbody>
@@ -64,6 +65,8 @@
                                 <td>${mrk.getCourseName()}</td>
                                 <td>${mrk.getCourseMarks()}</td>
                                 <td>${mrk.getStudentId()}</td>
+                                <td><a href="editmarks.php?page=editstudent">Edit</a></td>
+                                <td><a href="deletemarks.php?page=deleteuser">Delete</a></td>
                             </tr>
                         </c:forEach>
                         </tbody>

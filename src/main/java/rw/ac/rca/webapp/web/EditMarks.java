@@ -8,9 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import rw.ac.rca.webapp.dao.MarksDAO;
 import rw.ac.rca.webapp.dao.StudentDAO;
+import rw.ac.rca.webapp.dao.impl.MarksDAOImpl;
 import rw.ac.rca.webapp.dao.impl.StudentDAOImpl;
 import rw.ac.rca.webapp.orm.Address;
+import rw.ac.rca.webapp.orm.Mark;
 import rw.ac.rca.webapp.orm.Student;
 import rw.ac.rca.webapp.util.UserRole;
 
@@ -18,14 +21,14 @@ import rw.ac.rca.webapp.util.UserRole;
 /**
  * Servlet implementation class CreateUser
  */
-public class EditStudent extends HttpServlet {
+public class EditMarks extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private StudentDAO studentDAO = StudentDAOImpl.getInstance();
+    private MarksDAO marksDAO = MarksDAOImpl.getInstance();
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EditStudent() {
+    public EditMarks() {
         super();
     }
 
@@ -37,30 +40,22 @@ public class EditStudent extends HttpServlet {
         String pageRedirect = request.getParameter("page");
         HttpSession httpSession = request.getSession();
         if (pageRedirect != null) {
-            if (pageRedirect.equals("editstudent")) {
+            if (pageRedirect.equals("editmarks")) {
 
-                if (request.getParameter("saveEditedStudent") != null) {
+                if (request.getParameter("editMarks") != null) {
 
                     int id = Integer.parseInt(request.getParameter("id"));
-                    Student student = studentDAO.getStudentById(id);
+                    Mark mark = marksDAO.getMarksById(id);
 
                     try {
-                        String firstname = request.getParameter("firstname");
-                        String lastname = request.getParameter("lastname");
-                        String email = request.getParameter("email");
-                        String gender = request.getParameter("gender");
-                        int isInternational = Integer.parseInt(request.getParameter("isInternational"));
-                        int stdAddress = Integer.parseInt(request.getParameter("address"));
-                        Address address = new Address(stdAddress);
+                        String courseName = request.getParameter("coursename");
+                        int courseMarks = Integer.parseInt(request.getParameter("coursemarks"));
 
-                        student.setFirstName(firstname);
-                        student.setLastName(lastname);
-                        student.setEmail(email);
-                        student.setGender(gender);
-                        student.setIsInternational(isInternational);
-                        student.setAddress(address);
+                        mark.setCourseName(courseName);
+                        mark.setCourseMarks(courseMarks);
 
-                        studentDAO.updateStudent(student);
+                        marksDAO.updateMarks(mark);
+
                         httpSession.setAttribute("message", "Edited successfully");
                     } catch (Exception e) {
                         httpSession.setAttribute("message", "Can't Edit");
@@ -71,7 +66,7 @@ public class EditStudent extends HttpServlet {
             }
             UserRole[] userRoles = UserRole.values();
             httpSession.setAttribute("userRoles", userRoles);
-            request.getRequestDispatcher("WEB-INF/editstudent.jsp").forward(
+            request.getRequestDispatcher("WEB-INF/editmarks.jsp").forward(
                     request, response);
         }
     }

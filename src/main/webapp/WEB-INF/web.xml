@@ -136,6 +136,15 @@
     <url-pattern>/editstudent.php</url-pattern>
   </servlet-mapping>
   <servlet>
+    <display-name>EditMarks</display-name>
+    <servlet-name>EditMarks</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.EditMarks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditMarks</servlet-name>
+    <url-pattern>/editmarks.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <display-name>DeleteUser</display-name>
     <servlet-name>DeleteUser</servlet-name>
     <servlet-class>rw.ac.rca.webapp.web.DeleteUser</servlet-class>
