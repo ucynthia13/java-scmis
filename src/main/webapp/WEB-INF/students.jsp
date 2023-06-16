@@ -70,7 +70,6 @@
 									<td>Email</td>
 									<td>isInternational</td>
 									<td>Address Id</td>
-
 									<td colspan="2" rowspan="1">Operation </td>
 								</tr>
 							</thead>
@@ -83,9 +82,9 @@
 										<td>${std.getGender()}</td>
 										<td>${std.getEmail()}</td>
 										<td>${std.getIsInternational()}</td>
-										<td>${std.getAddress()}</td>
+										<td>${std.address.getId()}</td>
 										<td><a href="editstudent.php?page=editstudent">Edit</a></td>
-                                        <td><a href="deleteuser.php?page=deleteuser">Delete</a></td>
+                                        <td><a href="deletestudent.php?page=deletestudent">Delete</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>

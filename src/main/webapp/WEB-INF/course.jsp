@@ -58,6 +58,7 @@
                             <td>code</td>
                             <td>minimum student</td>
                             <td>maximum student</td>
+                            <td colspan="2" rowspan="1">Operation </td>
 
                         </tr>
                         </thead>
@@ -69,6 +70,8 @@
                                 <td>${csr.getCode()}</td>
                                 <td>${csr.getMinStudent()}</td>
                                 <td>${csr.getMaxStudent()}</td>
+                                <td><a href="editcourse.php?page=editcourse">Edit</a></td>
+                                <td><a href="deletecourse.php?page=deletecourse">Delete</a></td>
                             </tr>
                         </c:forEach>
                         </tbody>

@@ -53,7 +53,7 @@
                     <form action="listparents.php?page=statusapproval" method="post" class="form-group">
                         <div class="search" style="text-align: right; padding-top: 16px; ">
                             <form action="listparents.php" method="get">
-                                        Enter Student ID
+                                        Enter Parent ID
                                         <input type="text" name="id" id="id" />
                                         <input type='submit' name="parentregistrationsearch"
                                             value='search' />
@@ -84,9 +84,8 @@
                                             <td>${prt.getGender()}</td>
                                             <td>${prt.getEmail()}</td>
                                             <td>${prt.getPhoneNumber()}</td>
-                                            <td>${prt.getAddress()}</td>
-                                            <td>${prt.getStudent()}</td>
-
+                                            <td>${prt.address.getId()}</td>
+                                            <td>${prt.student.getId()}</td>
                                             <td><a href="editparent.php?page=editparent">Edit</a></td>
                                             <td><a href="deleteparent.php?page=deleteparent">Delete</a></td>
                                         </tr>

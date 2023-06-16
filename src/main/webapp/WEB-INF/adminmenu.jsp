@@ -27,13 +27,11 @@
 <li class="dropdown"><a class="idTabs dropdown-toggle" data-toggle="dropdown" href="#reports"> Reports</a>
 	<ul class="noJS dropdown-menu">
 		<li><a
-			href="liststudents.php?page=reportsearch&&user_role=adm&&action=search"> Students reports</a></li>
+			href="students.php?page=reportsearch&&user_role=adm&&action=search"> Students reports</a></li>
 		<li><a
-			href="listcourses.php?page=reportcourses&&user_role=adm&&action=search"> Courses reports </a></li>
+			href="courses.php?page=reportcourses&&user_role=adm&&action=search"> Courses reports </a></li>
 		<li><a
-			href="listmarks.php?page=markssearch&&user_role=adm&&action=search"> Marks Report</a></li>
-		<li><a
-			href="instructorspdf.php?"> All Instructors PDF</a></li>
+			href="marks.php?page=markssearch&&user_role=adm&&action=search"> Marks Report</a></li>
 		<li><a
 			href="Studentspdf.php?"> All Students PDF</a></li>
 	</ul></li>

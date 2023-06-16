@@ -68,6 +68,7 @@
 									<td>Email</td>
 									<td>Role</td>
 									<td>Check User</td>
+									<td colspan="2" rowspan="1">Operation </td>
 								</tr>
 							</thead>
 							<tbody>
@@ -79,6 +80,8 @@
 										<td>${usr.userRole.getRoleDescription()}</td>
 										<td><input type="checkbox" name="usrIds"
 											value="${usr.id}" /></td>
+									    <td><a href="edituser.php?page=edituser">Edit</a></td>
+                                        <td><a href="deleteuser.php?page=deleteuser">Delete</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>

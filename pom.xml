@@ -215,11 +215,17 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.0</version>
 		</dependency>
-	</dependencies>
+	  <dependency>
+		  <groupId>com.lowagie</groupId>
+		  <artifactId>itext</artifactId>
+		  <version>2.1.7</version>
+	  </dependency>
+
+  </dependencies>
 	<developers>
 		<developer>
-			<name>Aphrodice Rwagaju</name>
-			<email>aphrorwa@gmail.com</email>
+			<name>Cynthia Umwali</name>
+			<email>cynthiaaa877@gmail.com</email>
 			<roles>
 				<role>Software Programming Instructor</role>
 			</roles>

@@ -9,12 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import rw.ac.rca.webapp.dao.MarksDAO;
-import rw.ac.rca.webapp.dao.StudentDAO;
 import rw.ac.rca.webapp.dao.impl.MarksDAOImpl;
-import rw.ac.rca.webapp.dao.impl.StudentDAOImpl;
-import rw.ac.rca.webapp.orm.Address;
 import rw.ac.rca.webapp.orm.Mark;
-import rw.ac.rca.webapp.orm.Student;
 import rw.ac.rca.webapp.util.UserRole;
 
 

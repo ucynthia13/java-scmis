@@ -7,7 +7,6 @@ import java.util.List;
 import org.hibernate.Query;
 import rw.ac.rca.webapp.dao.MarksDAO;
 import rw.ac.rca.webapp.orm.Mark;
-import rw.ac.rca.webapp.orm.Student;
 
 public class MarksDAOImpl extends DAO implements MarksDAO {
 

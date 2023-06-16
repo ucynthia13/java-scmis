@@ -8,14 +8,6 @@ import org.hibernate.Query;
 import rw.ac.rca.webapp.dao.StudentDAO;
 import rw.ac.rca.webapp.orm.Student;
 
-/**
- * implements student interface extends DAO
- *
- * @see StudentDAO
- * @see DAO
- * @author Aphrodice Rwagaju
- *
- */
 public class StudentDAOImpl extends DAO implements StudentDAO {
     public static final Logger LOG = Logger.getLogger(StudentDAOImpl.class);
     public static StudentDAOImpl instance;

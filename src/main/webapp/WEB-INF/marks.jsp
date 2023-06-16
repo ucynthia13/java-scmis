@@ -64,7 +64,7 @@
                                 <td>${mrk.getId()}</td>
                                 <td>${mrk.getCourseName()}</td>
                                 <td>${mrk.getCourseMarks()}</td>
-                                <td>${mrk.getStudentId()}</td>
+                                <td>${mrk.studentId.getId()}</td>
                                 <td><a href="editmarks.php?page=editstudent">Edit</a></td>
                                 <td><a href="deletemarks.php?page=deleteuser">Delete</a></td>
                             </tr>

@@ -1,6 +1,6 @@
 <div id="footer">
-	<p>RCA SMIS, a product of Rwanda Coding Academy</p>
-	&copy; 2023 RCA
+    <p class="mb-0">RCA SMIS, a product of Rwanda Coding Academy</p>
+    <p class="mb-0">&copy; 2023 RCA</p>
 </div>
 </div>
 </body>

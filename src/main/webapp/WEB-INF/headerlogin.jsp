@@ -19,12 +19,22 @@
          crossorigin="anonymous"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
 	<title>${param.title}</title>
+	<style>
+	*{
+	margin: 0px;
+	padding:0px;
+	}
+	  {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7sD50eaOuWRsYC7W8BMU2pOt7443yjfVgI9c93AOCZMhPzHJNEy_tT1Nd-2MINrxECU&usqp=CAU');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+	</style>
 </head>
-<body class="container border">
-	<br />
-	<br />
-	<br />
+
+<body class="container">
 	<div id="layoutlogin">
 		<div id="bannerlogin" class="border border-dark">
-			<h2 class="text_header_login text-primary p-3">Welcome Back</h2>
+			<h2 class="text_header_login text-primary p-3" style="padding-bottom: 32px;">Welcome Back</h2>
 		</div>

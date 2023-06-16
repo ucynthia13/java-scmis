@@ -15,14 +15,6 @@ import rw.ac.rca.webapp.dao.UserDAO;
 import rw.ac.rca.webapp.orm.User;
 import rw.ac.rca.webapp.util.UserRole;
 
-/**
- * implements user interface extends DAO
- * 
- * @see UserDAO
- * @see DAO
- * @author Aphrodice Rwagaju
- * 
- */
 public class UserDAOImpl extends DAO implements UserDAO {
 	public static final Logger LOG = Logger.getLogger(UserDAOImpl.class);
 	public static UserDAOImpl instance;

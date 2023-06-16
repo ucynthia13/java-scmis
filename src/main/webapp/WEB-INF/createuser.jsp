@@ -5,29 +5,58 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
-<div class="container">
+<div class="container" >
+<div id="header">
 <jsp:include page="headeradmin.jsp"><jsp:param
 		name="title" value="Create User" />
 </jsp:include>
 </div>
+</div>
+    <style>
+        #header{
+            display: none;
+        }
+        #middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 65vh;
+            flex-direction: column;
+            border: 0.3px solid gray;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            margin-left: 320px;
+            margin-top: 64px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
 
+        }
+        .form-group{
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+    </style>
 <div id="middle">
-		<h3 style="text-align: center; padding-top: 32px; ">
-			<b>Enter User Details</b>
+		<h3 style="text-align: center;">
+			<b>New Registration</b>
 		</h3>
 		<c:if test="${message != null}">
 			<fieldset>
 				<h3>
-					<span style="color: red"> ${message}</span>
+					<span style="color: red;"> ${message}</span>
 				</h3>
 			</fieldset>
 		</c:if>
-		<form action="createuser.php?page=createuser" method="post" class="form-group">
-					<label for="username">Username: </label>
-					<input type="text" size="25" maxlength="50"
-						name="username" id="username" class="form-control"/>
+		<form action="createuser.php?page=createuser" method="post" class="form-group ">
 
-					<label for="password">Password: </label>
+					<label for="username">Username</label>
+					<input type="text" size="25" maxlength="50"
+						name="username" id="username" class="form-control mt-4"/>
+
+					<label for="password">Password</label>
 					<input type="password" size="25"
 						maxlength="50" name="password" id="password" class="form-control" />
 
@@ -53,6 +82,10 @@
 					<input type="submit" name="saveDataUser"
 						value="Create User" class="btn btn-primary" style="margin-top: 16px; " />
 
+
+                    <a href="login.php?" style="margin-left: 260px;">| Login |</font></a>
+
+
 		</form>
+		<%@ include file="footerlogin.jsp"%>
 </div>
-<%@ include file="footer.jsp"%>

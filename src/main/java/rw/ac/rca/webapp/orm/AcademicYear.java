@@ -13,10 +13,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-/**
- * @author Aphrodice Rwagaju
- *
- */
 @Entity
 @Table(name = "academic_year")
 public class AcademicYear {

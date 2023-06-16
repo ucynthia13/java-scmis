@@ -13,7 +13,7 @@
 
 <div id="middle">
 		<h3 style="text-align: center; padding-top: 32px; ">
-			<b>Enter Student Details</b>
+			<b>Enter Parent Details</b>
 		</h3>
 		<c:if test="${message != null}">
 			<fieldset>

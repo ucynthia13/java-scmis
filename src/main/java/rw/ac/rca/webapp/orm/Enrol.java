@@ -14,10 +14,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-/**
- * @author Aphrodice Rwagaju
- *
- */
 @Entity
 @Table(name = "enrollment")
 public class Enrol implements Serializable{

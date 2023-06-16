@@ -8,7 +8,7 @@ import java.util.List;
 
 import javax.persistence.*;
 
- @Entity
+ @Entity	
 @Table(name = "student")
 public class Student extends Person{
 
